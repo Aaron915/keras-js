@@ -46,7 +46,7 @@ export default class Model {
     this.headers = headers
 
     // specifies that data files are from local file system (Node.js only)
-    this.filesystem = typeof window !== 'undefined' ? false : filesystem
+    this.filesystem = filesystem
 
     // event emitter
     this.events = new EventEmitter()
